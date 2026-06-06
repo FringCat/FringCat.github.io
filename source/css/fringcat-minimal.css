@@ -1,0 +1,121 @@
+/* FringCat：Ocean 极简气质 + 现代克制交互（字体使用 Redefine 默认） */
+
+:root {
+  --fringcat-text: #1e3e3f;
+  --fringcat-text-muted: #5c6b72;
+  --fringcat-link: #127ea9;
+  --fringcat-bg: #fafaf8;
+  --fringcat-border: rgba(30, 62, 63, 0.1);
+}
+
+body {
+  color: var(--fringcat-text);
+  background: var(--fringcat-bg);
+}
+
+a {
+  color: var(--fringcat-link);
+}
+
+a:hover {
+  color: #1594c6;
+}
+
+/* 导航：去渐变，留白分隔 */
+.navbar-container {
+  background: rgba(250, 250, 248, 0.92) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--fringcat-border);
+}
+
+.navbar-item {
+  color: var(--fringcat-text) !important;
+}
+
+/* Banner：Ocean 式柔和遮罩 */
+.home-banner-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(178, 191, 204, 0.42);
+  pointer-events: none;
+}
+
+.home-banner-title {
+  font-size: 2rem !important;
+}
+
+.home-banner-subtitle {
+  font-size: 1rem !important;
+  opacity: 0.92;
+}
+
+/* 文章列表：去卡片感，靠留白与细线 */
+.home-article-item,
+.article-item,
+.redefine-container {
+  box-shadow: none !important;
+  border-radius: 2px !important;
+  background: transparent !important;
+}
+
+.home-article-item:hover,
+.article-item:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.home-article-item {
+  border-bottom: 1px solid var(--fringcat-border);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-article-title,
+.article-title {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+}
+
+.home-article-meta,
+.article-meta,
+.post-meta {
+  color: var(--fringcat-text-muted) !important;
+  font-size: 0.9rem !important;
+}
+
+.md-content,
+.article-content {
+  line-height: 1.85 !important;
+  font-size: 16px !important;
+}
+
+.md-content img,
+.article-content img {
+  border-radius: 2px !important;
+}
+
+.footer-container {
+  border-top: 1px solid var(--fringcat-border);
+  box-shadow: none !important;
+}
+
+.footer-container .fa-beat {
+  animation: none !important;
+}
+
+html.dark {
+  --fringcat-text: #d8e0e0;
+  --fringcat-text-muted: #8fa3a8;
+  --fringcat-bg: #1a2426;
+  --fringcat-border: rgba(216, 224, 224, 0.12);
+}
+
+html.dark .navbar-container {
+  background: rgba(26, 36, 38, 0.92) !important;
+}
+
+html.dark .home-banner-media::after {
+  background: rgba(23, 45, 62, 0.55);
+}

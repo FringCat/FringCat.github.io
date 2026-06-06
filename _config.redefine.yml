@@ -10,9 +10,9 @@
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
-  title: FringCat
-  subtitle: 记录生活与思考的个人博客
-  author: FringCat
+  title: FryCAT
+  subtitle: 安静书写，自然生长
+  author: FryCAT
   url: https://fringcat.github.io
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -22,16 +22,16 @@ info:
 defaults:
   favicon: /favicon.svg
   logo:
-  avatar:
+  avatar: /images/FryCAT.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
 # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/colors
 colors:
-  primary: "#367df7"
+  primary: "#127ea9"
   secondary:
-  default_mode: light
+  default_mode: auto
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -40,33 +40,29 @@ colors:
 global:
   # Custom global fonts
   fonts:
-    # Chinese fonts
-    chinese: 
-      enable: false # Whether to enable custom chinese fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
-    # English fonts
-    english: 
-      enable: false # Whether to enable custom english fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
-    # Custom title fonts (navbar, sidebar)
+    chinese:
+      enable: false
+      family:
+      url:
+    english:
+      enable: false
+      family:
+      url:
     title:
-      enable: false # Whether to enable custom title fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
+      enable: false
+      family:
+      url:
   # Content max width
-  content_max_width: 1000px
+  content_max_width: 720px
   # Sidebar width
   sidebar_width: 210px
   # Effects on mouse hover
   hover:
-    shadow: true # shadow effect
-    scale: false # scale effect
-  # Scroll progress
+    shadow: false
+    scale: false
   scroll_progress:
-    bar: false # progress bar
-    percentage: true # percentage
+    bar: false
+    percentage: false
   # Website counter
   website_counter:
     url: https://cn.vercount.one/js
@@ -82,8 +78,7 @@ global:
     custom_message: # Custom message. If empty, the site title will be displayed
   # Side tools settings
   side_tools:
-    # Whether to enable gear rotation animation for settings button
-    gear_rotation: true
+    gear_rotation: false
     # Whether to auto expand tools list on page load
     auto_expand: false
   # Whether to enable open graph
@@ -115,44 +110,39 @@ fontawesome: # Pro v6.2.1
 # HOME BANNER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/home/home_banner
 home_banner:
-  enable: true
+  enable: false
   style: fixed
   image:
-    light:
-    dark:
-  title: FringCat
+    light: /images/wallpaper.jpg
+    dark: /images/wallpaper.jpg
+  title: FryCAT
   subtitle:
     text:
-      - 安静书写，自然生长
+      - 爱书写 · 爱生活
     hitokoto:
       enable: false
       show_author: false
       api: https://v1.hitokoto.cn
-    typing_speed: 100 # Typing speed (ms)
-    backing_speed: 80 # Backing speed (ms)
-    starting_delay: 500 # Start delay (ms)
-    backing_delay: 1500 # Backing delay (ms)
-    loop: true # Whether to loop
-    smart_backspace: true # Whether to smart backspace
+    typing_speed: 80
+    backing_speed: 60
+    starting_delay: 300
+    backing_delay: 2000
+    loop: false
+    smart_backspace: false
   # Color of home banner text
   text_color: 
     light: "#fff" # light mode
     dark: "#d1d1b6" # dark mode
   # Specific style of the text
-  text_style: 
-    # Title font size
-    title_size: 2.8rem
-    # Subtitle font size
-    subtitle_size: 1.5rem
+  text_style:
+    title_size: 2rem
+    subtitle_size: 1rem
     # Line height between title and subtitle
     line_height: 1.2
   # Home banner custom font
-  custom_font: 
-    # Whether to enable custom font
+  custom_font:
     enable: false
-    # Font family
-    family: 
-    # URL to font CSS file
+    family:
     url:
   # Home banner social links
   social_links:
@@ -171,9 +161,9 @@ navbar:
   auto_hide: false
   # Navbar background color
   color:
-    left: "#f78736" #left side 
-    right: "#367df7"  #right side
-    transparency: 35 #percent (10-99)
+    left: "#fafaf8"
+    right: "#f0f4f4"
+    transparency: 96
   # Navbar width (usually no need to modify)
   width:
     home: 1200px #home page
@@ -203,7 +193,7 @@ navbar:
 home:
   # Sidebar settings
   sidebar:
-    enable: true # Whether to enable sidebar
+    enable: false
     position: left # Sidebar position. left, right
     first_item: menu # First item in sidebar. menu, info
     announcement: # Announcement text
@@ -222,7 +212,7 @@ home:
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article excerpt length
-  excerpt_length: 200 # Max length of article excerpt
+  excerpt_length: 160
   # Article categories visibility
   categories:
     enable: true  # Whether to enable
@@ -239,12 +229,12 @@ home:
 articles:
   # Set the styles of the article
   style:
-    font_size: 16px # Font size
-    line_height: 1.5 # Line height
-    image_border_radius: 14px # image border radius
+    font_size: 16px
+    line_height: 1.85
+    image_border_radius: 2px
     image_alignment: center # image alignment. left, center
     image_caption: false # Whether to display image caption
-    link_icon: true # Whether to display link icon
+    link_icon: false
     delete_mask: false # Add mask effect to <del> tags, hiding content by default and revealing on hover
     title_alignment: left # Title alignment. left, center
     headings_top_spacing: # Top spacing for headings from h1-h6
@@ -310,8 +300,7 @@ articles:
 # COMMENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/posts/comment
 comment:
-  # Whether to enable comment
-  enable: true
+  enable: false
   # Comment system
   system: waline # waline, gitalk, twikoo, giscus, utterances, artalk
   # System configuration
@@ -367,14 +356,12 @@ comment:
 # FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/footer
 footer:
-  # Show website running time
-  runtime: true # show website running time or not
-  # Icon in footer, write fontawesome icon code here
-  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
+  runtime: false
+  icon: ''
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
   start: 2026/06/06 00:00:00
   # Site statistics
-  statistics: true # show site statistics or not (total articles, total words)
+  statistics: false
   # Footer message
   customize:
   # ICP record number. See https://beian.miit.gov.cn/
@@ -388,15 +375,13 @@ footer:
 # INJECT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/inject
 inject:
-  # Whether to enable inject
-  enable: false
-  # Inject custom head html code
-  head: 
+  enable: true
+  head:
+    - '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap">'
+    - '<link rel="stylesheet" href="/css/ubuntu-desktop.css">'
     -
-    -
-  # Inject custom footer html code
   footer:
-    -
+    - '<script src="/js/ubuntu-desktop.js" defer data-swup-reload-script></script>'
     -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
