@@ -1,6 +1,8 @@
-dist/
+public/
+resources/
 node_modules/
-.astro/
+.hugo_build.lock
+.tools/
 
 # logs
 npm-debug.log*

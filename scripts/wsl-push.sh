@@ -3,14 +3,15 @@ set -euo pipefail
 
 cd /mnt/d/A-Work/AAA_projects/blog
 
-git add .gitignore README.md
+git submodule update --init --recursive
+
 git add -A
 
 if git diff --cached --quiet; then
   echo "Nothing to commit."
 else
   git commit -F - <<'EOF'
-init astro blog with minimal design and github pages deploy
+migrate blog from Astro to Hugo PaperMod theme
 EOF
 fi
 
