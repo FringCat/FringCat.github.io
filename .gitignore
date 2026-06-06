@@ -1,8 +1,8 @@
 public/
-resources/
+.deploy_git/
+db.json
+*.log
 node_modules/
-.hugo_build.lock
-.tools/
 
 # logs
 npm-debug.log*

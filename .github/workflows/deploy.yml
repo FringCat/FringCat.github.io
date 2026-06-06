@@ -21,34 +21,25 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.162.1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Build with Hexo
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

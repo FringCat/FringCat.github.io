@@ -1,0 +1,61 @@
+# Hexo Configuration
+# Docs: https://hexo.io/docs/configuration.html
+
+title: FringCat
+subtitle: ''
+description: '记录生活与思考的个人博客'
+keywords: Blog, 博客, 个人博客
+author: FringCat
+language: zh-CN
+timezone: Asia/Shanghai
+
+url: https://fringcat.github.io
+permalink: posts/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+theme: redefine
+
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+
+category_map:
+tag_map:
+
+default_layout: post
+auto_spacing: true
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+
+syntax_highlighter:
+  highlight:
+    line_number: true
+    auto_detect: false
+    tab_replace: ''
+
+code_block:
+  highlight: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+
+new_post_name: :title.md
+default_category: uncategorized

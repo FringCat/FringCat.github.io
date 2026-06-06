@@ -1,50 +1,43 @@
 # FringCat 的博客
 
-个人博客，基于 [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题，托管于 [GitHub Pages](https://fringcat.github.io)。
+个人博客，基于 [Hexo](https://hexo.io/) + [Redefine](https://github.com/EvanNotFound/hexo-theme-redefine) 主题，托管于 [GitHub Pages](https://fringcat.github.io)。
 
 ## 本地开发
 
-先安装 [Hugo Extended](https://gohugo.io/installation/)（PaperMod 需要 Extended 版本）：
-
 ```bash
-# Windows（winget）
-winget install Hugo.Hugo.Extended
-
-# macOS
-brew install hugo
-```
-
-克隆仓库后需初始化主题子模块：
-
-```bash
-git submodule update --init --recursive
-```
-
-启动本地预览：
-
-```bash
+npm install
 npm run dev
-# 或：hugo server -D
 ```
 
-浏览器访问 http://localhost:1313
+浏览器访问 http://localhost:4000
 
 ## 写文章
 
-在 `content/posts/` 下新建 Markdown 文件：
+在 `source/_posts/` 下新建 Markdown 文件：
 
 ```markdown
 ---
-title: "标题"
-date: 2026-06-07
-draft: false
-summary: "摘要"
-tags: ["标签"]
-categories: ["分类"]
+title: 标题
+date: 2026-06-07 12:00:00
+tags:
+  - 标签
+categories:
+  - 分类
+description: 摘要
 ---
 
 正文内容...
 ```
+
+或使用 Hexo 命令创建：
+
+```bash
+npx hexo new "文章标题"
+```
+
+## 主题配置
+
+站点配置在 `_config.yml`，Redefine 主题配置在 `_config.redefine.yml`（升级主题时不会被覆盖）。
 
 ## 部署
 
@@ -52,6 +45,6 @@ categories: ["分类"]
 
 ## 技术栈
 
-- Hugo + PaperMod 主题
+- Hexo + Redefine 主题
 - GitHub Pages + GitHub Actions
-- 明暗主题、站内搜索、RSS 订阅
+- 明暗主题、流畅页面切换、RSS 订阅
