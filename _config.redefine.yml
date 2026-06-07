@@ -10,9 +10,9 @@
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
-  title: FringCat
-  subtitle: 记录生活与思考的个人博客
-  author: FringCat
+  title: FryCAT
+  subtitle: 芝士博客
+  author: FryCAT
   url: https://fringcat.github.io
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -22,7 +22,7 @@ info:
 defaults:
   favicon: /favicon.svg
   logo:
-  avatar:
+  avatar: /images/FryCAT.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -118,9 +118,9 @@ home_banner:
   enable: true
   style: fixed
   image:
-    light:
-    dark:
-  title: FringCat
+    light: /images/wallpaper.jpg
+    dark: /images/wallpaper.jpg
+  title: FryCAT
   subtitle:
     text:
       - 安静书写，自然生长
