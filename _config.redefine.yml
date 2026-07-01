@@ -90,7 +90,7 @@ global:
   open_graph:
     enable: true
     image:
-    description: 记录生活与思考的个人博客
+    description: 记录我
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
@@ -123,7 +123,7 @@ home_banner:
   title: FryCAT
   subtitle:
     text:
-      - 安静书写，自然生长
+      - 后来，青春是一座窄窄的海桥，学校在这头，而我在那头
     hitokoto:
       enable: false
       show_author: false
